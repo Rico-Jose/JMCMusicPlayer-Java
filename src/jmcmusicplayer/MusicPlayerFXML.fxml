@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="389.0" prefWidth="390.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jmcmusicplayer.MusicPlayerController">
+    <children>
+        <TableView fx:id="table" layoutX="25.0" layoutY="88.0" prefHeight="242.0" prefWidth="247.0">
+            <columns>
+                <TableColumn fx:id="fullpath" prefWidth="246.40002365112304" text="Full Path" />
+            </columns>
+        </TableView>
+        <Button fx:id="loadsongs" layoutX="286.0" layoutY="130.0" mnemonicParsing="false" onAction="#handleAddSongsButtonAction" text="Add Songs" />
+        <Button fx:id="search" layoutX="286.0" layoutY="350.0" mnemonicParsing="false" onAction="#handleSearchButtonAction" prefHeight="26.0" prefWidth="78.0" text="Search" />
+        <TextField fx:id="TFSong" layoutX="25.0" layoutY="350.0" prefHeight="26.0" prefWidth="247.0" />
+        <TextField fx:id="TFInfo" editable="false" layoutX="25.0" layoutY="45.0" prefHeight="26.0" prefWidth="336.0" />
+        <Button fx:id="sort" layoutX="286.0" layoutY="228.0" mnemonicParsing="false" onAction="#handleSortButtonAction" prefHeight="26.0" prefWidth="78.0" text="Sort" />
+      <BorderPane prefHeight="26.0" prefWidth="390.0">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem fx:id="about" mnemonicParsing="false" onAction="#handleAboutButtonAction" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+         </top>
+      </BorderPane>
+      <Button fx:id="save" layoutX="286.0" layoutY="181.0" mnemonicParsing="false" onAction="#handleSaveButtonAction" prefHeight="26.0" prefWidth="78.0" text="Save" />
+    </children>
+</AnchorPane>
