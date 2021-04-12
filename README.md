@@ -1,10 +1,6 @@
-# JMCMusicPlayer-Java
+<h1>JMCMusicPlayer-Java</h1>
 
-The JMC Music Player is an application designed for Jupiter Mining Corporation employees. The users need to log in using their credentials (the application uses hashing technique) to be able to use the application to search, play and sort the songs stored in a binary tree. The application loads and saves the path of the songs from and into a CSV file using a third-party library.
-
-The algorithm used for sorting is merge sort, and for searching is binary search.
-
-Please see the How-To Guide by clicking Help from the menu bar for assistance in operating the application.
+<em>This project is developed according to South Metropolitan TAFE requirements.</em>
 
  * Developer: Jose Rico Imbang
  * Student Id: 30019932
@@ -12,6 +8,15 @@ Please see the How-To Guide by clicking Help from the menu bar for assistance in
  * AT3 - Project
  * South Metropolitan TAFE, Diploma of Software Development
  * Third party library link - https://www.javatpoint.com/how-to-read-csv-file-in-java
+
+<h2>Introduction</h2>
+
+The JMC Music Player is an application designed for Jupiter Mining Corporation employees. The users need to log in using their credentials (the application uses hashing technique) to be able to use the application to search, play and sort the songs stored in a binary tree. The application loads and saves the path of the songs from and into a CSV file using a third-party library.
+
+The algorithm used for sorting is merge sort, and binary search for searching.
+
+Please see the How-To Guide by clicking Help from the menu bar for assistance in operating the application.
+
 <br>
 <table border="1" cellpadding="4" cellspacing="0">
   <thead>
